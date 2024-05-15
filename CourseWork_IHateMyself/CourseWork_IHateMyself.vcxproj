@@ -132,6 +132,7 @@
     <ClCompile Include="Files.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="Run_sorts.cpp" />
+    <ClCompile Include="Show_menu.cpp" />
     <ClCompile Include="Utils.cpp" />
     <ClCompile Include="Validation.cpp" />
   </ItemGroup>
@@ -145,6 +146,7 @@
     <ClInclude Include="Run_sorts.h" />
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="ShellSort.h" />
+    <ClInclude Include="Show_menu.h" />
     <ClInclude Include="Utils.h" />
     <ClInclude Include="Validation.h" />
   </ItemGroup>

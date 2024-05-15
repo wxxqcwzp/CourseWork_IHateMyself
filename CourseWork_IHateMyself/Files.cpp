@@ -53,12 +53,14 @@ void save(vector<vector<double>> matrix, ofstream& output_file) {
     output_file.close();
 }
 
-vector<vector<double>> get_matrix_from_file(string filepath) {
+vector<vector<double>> set_matrix_from_file() {
 
     vector<vector<double>> matrix;
 
+    string filepath = InputString("Enter filepath (only txt available):");
+
     while (!is_filepath_valid(filepath,READ)) {
-        filepath = InputString("Enter filepath (only txt available):");
+        filepath = InputString("Enter new filepath (only txt available):");
     }
 
     ifstream input_file(filepath);
@@ -102,6 +104,20 @@ vector<vector<double>> get_matrix_from_file(string filepath) {
 }
 
 void save_matrix(vector<vector<double>> matrix, vector<vector<string>> results) {
+
+    if (matrix.empty()) {
+
+        cout << "You can`t save empty matrix" << endl;
+        return;
+
+    }
+
+    if (results.empty()) {
+
+        cout << "Íou need to run matrix sort" << endl;
+        return;
+
+    }
 
     bool is_saved = false;
 
