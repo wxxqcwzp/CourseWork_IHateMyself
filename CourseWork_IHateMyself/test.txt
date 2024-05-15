@@ -1,0 +1,86 @@
+3;2;1
+3;2;1
+3;2;1
+
+
+1;2;3
+1;2;3
+1;2;3
+
+
+Results:balls	
+cock	
+3;2;1
+3;2;1
+3;2;1
+
+
+1;2;3
+1;2;3
+1;2;3
+
+
+Results:balls	kanye	
+cock	west	
+3;2;1
+3;2;1
+3;2;1
+
+
+1;2;3
+1;2;3
+1;2;3
+
+
+Results:
+balls	kanye	
+cock	west	
+3;2;1
+3;2;1
+3;2;1
+
+
+1;2;3
+1;2;3
+1;2;3
+
+
+Results:
+balls	kanye	
+cock	west	
+
+
+3;2;1
+3;2;1
+3;2;1
+
+
+1;2;3
+1;2;3
+1;2;3
+
+
+Results:
+balls	kanye	
+cock	west	
+
+
+3;2;1
+3;2;1
+3;2;1
+
+
+1;2;3
+1;2;3
+1;2;3
+
+
+Results:
+Algotithm	Swaps	Compares	
+Bubble sort	9	9	
+Selection sort	3	9	
+Insertion sort	9	9	
+Shell sort	9	9	
+Quick sort	9	9	
+
+
