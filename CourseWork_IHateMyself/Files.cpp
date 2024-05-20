@@ -32,7 +32,7 @@ void save(vector<vector<double>> matrix, ofstream& output_file) {
 
     BubbleSort bubble_sort;
 
-    bubble_sort.Sort(matrix, matrix.size());
+    bubble_sort.Sort(matrix);
 
     for (int i = 0; i < matrix.size(); i++) {
 
@@ -99,6 +99,8 @@ vector<vector<double>> set_matrix_from_file() {
 
     }
 
+    if (!matrix.empty()) { cout << "Matrix successfully loaded" << endl; }
+
     return matrix;
 
 }
@@ -114,7 +116,7 @@ void save_matrix(vector<vector<double>> matrix, vector<vector<string>> results) 
 
     if (results.empty()) {
 
-        cout << "Íou need to run matrix sort" << endl;
+        cout << "You need to run matrix sort" << endl;
         return;
 
     }
@@ -187,6 +189,6 @@ void save_matrix(vector<vector<double>> matrix, vector<vector<string>> results) 
 
     }
 
-
+    cout << "File successfully saved" << endl;
 
 }

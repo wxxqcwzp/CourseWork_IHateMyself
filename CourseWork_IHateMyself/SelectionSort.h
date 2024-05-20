@@ -9,25 +9,25 @@ class SelectionSort : public ISort {
 
 public:
 
-	void Sort(vector<vector<double>>& array, int size) override {
+	void Sort(vector<vector<double>> &matrix) override {
 
-		for (int line = 0; line < size; line++) {
+		for (int line = 0; line < matrix.size(); line++) {
 
-			for (int i = 0; i < array[line].size() - 1; i++) {
+			for (int i = 0; i < matrix[line].size() - 1; i++) {
 
 				int min_index = i;
 
-				for (int j = i + 1; j < array[line].size(); j++) {
+				for (int j = i + 1; j < matrix[line].size(); j++) {
 
 					this->comparison_counter++;
 
-					if (abs(array[line][min_index]) > abs(array[line][j])) { min_index = j; }
+					if (abs(matrix[line][min_index]) > abs(matrix[line][j])) { min_index = j; }
 
 				}
 
 				if (min_index != i) {
 
-					swap(array[line][i], array[line][min_index]);
+					swap(matrix[line][i], matrix[line][min_index]);
 
 					this->swap_counter++;
 

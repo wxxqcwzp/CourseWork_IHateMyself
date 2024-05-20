@@ -44,11 +44,11 @@ private:
     }
 
 public:
-    void Sort(vector<vector<double>>& array, int size) override {
+    void Sort(vector<vector<double>>& matrix) override {
 
-        for (int line = 0; line < size; line++) {
+        for (int line = 0; line < matrix.size(); line++) {
 
-            quickSort(array[line], 0, array[line].size() - 1);
+            quickSort(matrix[line], 0, matrix[line].size() - 1);
 
         }
 

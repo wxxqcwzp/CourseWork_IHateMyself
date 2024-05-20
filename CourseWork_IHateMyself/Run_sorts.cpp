@@ -1,4 +1,3 @@
-#include "ISort.h"
 #include "BubbleSort.h"
 #include "SelectionSort.h"
 #include "InsertionSort.h"
@@ -42,7 +41,7 @@ vector<vector<string>> run_sorts(vector<vector<double>>& matrix) {
     --------------------------------------------------------------------------------------------------------
     ------------------------------------------------------------------------------------------------------*/
 
-    bubble_sort.Sort(array_for_bubble_sort, array_for_bubble_sort.size());
+    bubble_sort.Sort(array_for_bubble_sort);
 
     show_matrix(array_for_bubble_sort, array_for_bubble_sort.size(), "Matrix sorted by bubble sort:");
 
@@ -66,7 +65,7 @@ vector<vector<string>> run_sorts(vector<vector<double>>& matrix) {
     -----------------------------------------------------------------------------------------------------*/
 
 
-    selection_sort.Sort(array_for_selection_sort, array_for_selection_sort.size());
+    selection_sort.Sort(array_for_selection_sort);
 
     show_matrix(array_for_selection_sort, array_for_selection_sort.size(), "Matrix sorted by selection sort:");
 
@@ -88,7 +87,7 @@ vector<vector<string>> run_sorts(vector<vector<double>>& matrix) {
     -----------------------------------------------------------------------------------------------------*/
 
 
-    insertion_sort.Sort(array_for_insertion_sort, array_for_insertion_sort.size());
+    insertion_sort.Sort(array_for_insertion_sort);
 
     show_matrix(array_for_insertion_sort, array_for_insertion_sort.size(), "Matrix sorted by insertion sort:");
 
@@ -110,7 +109,7 @@ vector<vector<string>> run_sorts(vector<vector<double>>& matrix) {
     -----------------------------------------------------------------------------------------------------*/
 
 
-    shell_sort.Sort(array_for_shell_sort, array_for_shell_sort.size());
+    shell_sort.Sort(array_for_shell_sort);
 
     show_matrix(array_for_shell_sort, array_for_shell_sort.size(), "Matrix sorted by shell sort:");
 
@@ -132,7 +131,7 @@ vector<vector<string>> run_sorts(vector<vector<double>>& matrix) {
     -------------------------------------------------------------------------------------------------------
     -----------------------------------------------------------------------------------------------------*/
 
-    quick_sort.Sort(array_for_quick_sort, array_for_quick_sort.size());
+    quick_sort.Sort(array_for_quick_sort);
 
     show_matrix(array_for_quick_sort, array_for_quick_sort.size(), "Matrix sorted by quick sort:");
 

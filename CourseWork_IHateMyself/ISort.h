@@ -15,8 +15,7 @@ protected:
 
 public:
 
-	virtual void Sort(vector<vector<double>>& array, int size) = 0;
-
+	virtual void Sort(vector<vector<double>>& matrix) = 0;
 
 	int get_swap_counter() { return swap_counter; }
 	int get_comparison_counter() { return comparison_counter; }

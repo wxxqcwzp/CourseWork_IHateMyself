@@ -4,6 +4,7 @@
 #include "Run_sorts.h"
 #include "Input.h"
 #include "Show_menu.h"
+#include "ISort.h"
 
 #include <iostream>
 
@@ -15,11 +16,11 @@ int main()
 
     system("chcp 65001");
     system("cls");
-    srand(time(nullptr));
+    srand(time(0));
     show_greeting();
 
-    vector<vector<double>> matrix{ {3,2,1},{3,2,1},{3,2,1} };
-    vector<vector<string>> results = { {"balls","kanye"},{"cock","west"}};
+    vector<vector<double>> matrix;
+    vector<vector<string>> results;
 
     int user_choice = 0;
     bool repeat = true;
