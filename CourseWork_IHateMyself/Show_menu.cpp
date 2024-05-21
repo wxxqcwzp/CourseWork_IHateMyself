@@ -25,8 +25,10 @@ void show_menu() {
 	cout << "1 - Set matrix by user input;" << endl;
 	cout << "2 - Set matrix by random input;" << endl;
 	cout << "3 - Set matrix by file input;" << endl;
-	cout << "4 - Run sorts;" << endl;
-	cout << "5 - Save results;" << endl;
-	cout << "6 - Exit;" << endl;
+	cout << "4 - Show your matrix;" << endl;
+	cout << "5 - Run sorts;" << endl;
+	cout << "6 - Save results;" << endl;
+	cout << "7 - Run tests;" << endl;
+	cout << "8 - Exit;" << endl;
 
 }

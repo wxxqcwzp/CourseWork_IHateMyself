@@ -24,11 +24,11 @@ vector<vector<string>> run_sorts(vector<vector<double>>& matrix) {
     ShellSort shell_sort;
     QuickSort quick_sort;
 
-    vector<vector<double>> array_for_bubble_sort = matrix;
-    vector<vector<double>> array_for_selection_sort = matrix;
-    vector<vector<double>> array_for_insertion_sort = matrix;
-    vector<vector<double>> array_for_shell_sort = matrix;
-    vector<vector<double>> array_for_quick_sort = matrix;
+    vector<vector<double>> matrix_for_bubble_sort = matrix;
+    vector<vector<double>> matrix_for_selection_sort = matrix;
+    vector<vector<double>> matrix_for_insertion_sort = matrix;
+    vector<vector<double>> matrix_for_shell_sort = matrix;
+    vector<vector<double>> matrix_for_quick_sort = matrix;
 
     show_matrix(matrix, matrix.size(), "Original matrix:");
 
@@ -41,9 +41,9 @@ vector<vector<string>> run_sorts(vector<vector<double>>& matrix) {
     --------------------------------------------------------------------------------------------------------
     ------------------------------------------------------------------------------------------------------*/
 
-    bubble_sort.Sort(array_for_bubble_sort);
+    bubble_sort.Sort(matrix_for_bubble_sort);
 
-    show_matrix(array_for_bubble_sort, array_for_bubble_sort.size(), "Matrix sorted by bubble sort:");
+    show_matrix(matrix_for_bubble_sort, matrix_for_bubble_sort.size(), "Matrix sorted by bubble sort:");
 
     cout << endl;
 
@@ -65,9 +65,9 @@ vector<vector<string>> run_sorts(vector<vector<double>>& matrix) {
     -----------------------------------------------------------------------------------------------------*/
 
 
-    selection_sort.Sort(array_for_selection_sort);
+    selection_sort.Sort(matrix_for_selection_sort);
 
-    show_matrix(array_for_selection_sort, array_for_selection_sort.size(), "Matrix sorted by selection sort:");
+    show_matrix(matrix_for_selection_sort,matrix_for_selection_sort.size(), "Matrix sorted by selection sort:");
 
     cout << endl;
 
@@ -87,9 +87,9 @@ vector<vector<string>> run_sorts(vector<vector<double>>& matrix) {
     -----------------------------------------------------------------------------------------------------*/
 
 
-    insertion_sort.Sort(array_for_insertion_sort);
+    insertion_sort.Sort(matrix_for_insertion_sort);
 
-    show_matrix(array_for_insertion_sort, array_for_insertion_sort.size(), "Matrix sorted by insertion sort:");
+    show_matrix(matrix_for_insertion_sort, matrix_for_insertion_sort.size(), "Matrix sorted by insertion sort:");
 
     cout << endl;
 
@@ -109,9 +109,9 @@ vector<vector<string>> run_sorts(vector<vector<double>>& matrix) {
     -----------------------------------------------------------------------------------------------------*/
 
 
-    shell_sort.Sort(array_for_shell_sort);
+    shell_sort.Sort(matrix_for_shell_sort);
 
-    show_matrix(array_for_shell_sort, array_for_shell_sort.size(), "Matrix sorted by shell sort:");
+    show_matrix(matrix_for_shell_sort, matrix_for_shell_sort.size(), "Matrix sorted by shell sort:");
 
     cout << endl;
 
@@ -131,9 +131,9 @@ vector<vector<string>> run_sorts(vector<vector<double>>& matrix) {
     -------------------------------------------------------------------------------------------------------
     -----------------------------------------------------------------------------------------------------*/
 
-    quick_sort.Sort(array_for_quick_sort);
+    quick_sort.Sort(matrix_for_quick_sort);
 
-    show_matrix(array_for_quick_sort, array_for_quick_sort.size(), "Matrix sorted by quick sort:");
+    show_matrix(matrix_for_quick_sort, matrix_for_quick_sort.size(), "Matrix sorted by quick sort:");
 
     cout << endl;
 
@@ -155,6 +155,11 @@ vector<vector<string>> run_sorts(vector<vector<double>>& matrix) {
         { "Quick sort", to_string(quick_sort.get_swap_counter()), to_string(quick_sort.get_comparison_counter()) }
 
     };
+
+    if (matrix_for_bubble_sort != matrix_for_quick_sort) { cout << "quick" << endl; }
+    if (matrix_for_bubble_sort != matrix_for_shell_sort) { cout << "shell" << endl; }
+    if (matrix_for_bubble_sort != matrix_for_insertion_sort) { cout << "insertion" << endl; }
+    if (matrix_for_bubble_sort != matrix_for_selection_sort) { cout << "selection" << endl; }
 
     show_table(results, results.size(), "Results:");
 

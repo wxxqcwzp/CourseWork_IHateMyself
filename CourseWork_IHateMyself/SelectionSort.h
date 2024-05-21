@@ -21,7 +21,7 @@ public:
 
 					this->comparison_counter++;
 
-					if (abs(matrix[line][min_index]) > abs(matrix[line][j])) { min_index = j; }
+					if (fabs(matrix[line][min_index]) > fabs(matrix[line][j])) { min_index = j; }
 
 				}
 

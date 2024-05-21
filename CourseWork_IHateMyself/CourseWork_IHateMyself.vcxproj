@@ -148,6 +148,7 @@
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="ShellSort.h" />
     <ClInclude Include="Show_menu.h" />
+    <ClInclude Include="Tests.h" />
     <ClInclude Include="Test_class.h" />
     <ClInclude Include="Utils.h" />
     <ClInclude Include="Validation.h" />

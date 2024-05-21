@@ -5,11 +5,12 @@
 #include "Input.h"
 #include "Show_menu.h"
 #include "ISort.h"
+#include "Tests.h"
 
 #include <iostream>
 
 
-enum menu { SET_MATRIX_UI = 1, SET_MATRIX_RI, SET_MATRIX_FI, RUN_SORTS, SAVE, EXIT };
+enum menu { SET_MATRIX_UI = 1, SET_MATRIX_RI, SET_MATRIX_FI, SHOW_MATRIX, RUN_SORTS, SAVE, RUN_TESTS,EXIT };
 
 int main()
 {
@@ -28,7 +29,7 @@ int main()
     do {
 
         show_menu();
-        user_choice = InputInt("Enter menu item:", 0, 7);
+        user_choice = InputInt("Enter menu item:", 0, 9);
     
         switch (user_choice)
         {
@@ -39,9 +40,13 @@ int main()
 
         case(SET_MATRIX_FI): { matrix = set_matrix_from_file(); break; }
 
+        case(SHOW_MATRIX): { show_matrix(matrix, matrix.size(), "Your matrix:"); break; }
+
         case(RUN_SORTS): { results = run_sorts(matrix); break; }
 
         case(SAVE): { save_matrix(matrix, results); break; }
+
+        case(RUN_TESTS): { run_tests(); break; }
 
         case(EXIT): { repeat = false; break; }
 
