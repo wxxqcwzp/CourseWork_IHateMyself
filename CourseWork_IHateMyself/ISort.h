@@ -34,7 +34,4 @@ public:
 
 	}
 
-
-	virtual ~ISort() = default;
-
 };

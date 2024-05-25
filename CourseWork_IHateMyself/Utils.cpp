@@ -10,6 +10,8 @@ double random(double min, double max) { return (min + static_cast<double>(rand()
 
 void show_matrix(vector<vector<double>> array, int size, string message) {
 
+	if (array.empty()) { cout << "Your matrix is empty" << endl; return; }
+
 	cout << message << endl << endl;
 
 	cout << fixed << setprecision(2);

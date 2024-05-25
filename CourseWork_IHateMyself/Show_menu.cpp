@@ -27,8 +27,9 @@ void show_menu() {
 	cout << "3 - Set matrix by file input;" << endl;
 	cout << "4 - Show your matrix;" << endl;
 	cout << "5 - Run sorts;" << endl;
-	cout << "6 - Save results;" << endl;
-	cout << "7 - Run tests;" << endl;
-	cout << "8 - Exit;" << endl;
+	cout << "6 - Save matrix;" << endl;
+	cout << "7 - Save results;" << endl;
+	cout << "8 - Run tests;" << endl;
+	cout << "9 - Exit;" << endl;
 
 }

@@ -16,7 +16,7 @@ vector<vector<string>> run_sorts(vector<vector<double>>& matrix) {
 
     vector<vector<string>> results{};
 
-    if (matrix.empty()) { return results; }
+    if (matrix.empty()) { cout << "Your matrix is empty" << endl; return results; }
 
     BubbleSort bubble_sort;
     SelectionSort selection_sort;
@@ -155,11 +155,6 @@ vector<vector<string>> run_sorts(vector<vector<double>>& matrix) {
         { "Quick sort", to_string(quick_sort.get_swap_counter()), to_string(quick_sort.get_comparison_counter()) }
 
     };
-
-    if (matrix_for_bubble_sort != matrix_for_quick_sort) { cout << "quick" << endl; }
-    if (matrix_for_bubble_sort != matrix_for_shell_sort) { cout << "shell" << endl; }
-    if (matrix_for_bubble_sort != matrix_for_insertion_sort) { cout << "insertion" << endl; }
-    if (matrix_for_bubble_sort != matrix_for_selection_sort) { cout << "selection" << endl; }
 
     show_table(results, results.size(), "Results:");
 

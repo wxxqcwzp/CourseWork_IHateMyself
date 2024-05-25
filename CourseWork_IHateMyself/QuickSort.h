@@ -24,8 +24,11 @@ private:
             }
         }
 
-        this->swap_counter++;
-        swap(array[i + 1], array[high]);
+
+        if (array[i + 1] != array[high]) {
+            this->swap_counter++;
+            swap(array[i + 1], array[high]);
+        }
 
         return i + 1;
     }

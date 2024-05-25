@@ -58,11 +58,12 @@ bool is_equal(vector<vector<double>> original_matrix,
 
 		return true;
 	}
-	
+	return false;
 }
 
-
 void run_tests() {
+
+	int i = 0;
 
 	vector<Test> tests{
 
@@ -76,7 +77,7 @@ void run_tests() {
 			 {6,7,8,9,10},
 			 {1,2,3,4,5} },
 
-			make_pair(30, 30), make_pair(6, 30), make_pair(30, 30), make_pair(12, 24), make_pair(24, 30)
+			make_pair(30, 30), make_pair(6, 30), make_pair(30, 30), make_pair(12, 24), make_pair(18, 30)
 		),
 
 		Test(
@@ -89,7 +90,7 @@ void run_tests() {
 			  {-6,-7,-8,-9,-10},
 			  {-1,-2,-3,-4,-5} },
 
-			make_pair(30, 30), make_pair(6, 30), make_pair(30, 30), make_pair(12, 24), make_pair(24, 30)
+			make_pair(30, 30), make_pair(6, 30), make_pair(30, 30), make_pair(12, 24), make_pair(18, 30)
 
 		),
 		Test(
@@ -102,9 +103,44 @@ void run_tests() {
 			  {6,-7,8,-9,10},
 			  {-1,2,-3,4,-5} },
 
-			make_pair(30, 30), make_pair(6, 30), make_pair(30, 30), make_pair(12, 24), make_pair(24, 30)
+			make_pair(30, 30), make_pair(6, 30), make_pair(30, 30), make_pair(12, 24), make_pair(18, 30)
 			
 		),
+
+		Test(
+		
+			{{16,3,2,13,20},
+			{5,18,11,8,15},
+			{9, 6, 7, 12, 21},
+			{4, 17, 14, 10, 22},
+			{19, 23, 25, 24, 1}},
+
+			{{2,3,13,16,20},
+			{5,8,11,15,18},
+			{6,7,9,12,21},
+			{4,10,14,17,22},
+			{1,19,23,24,25}},
+		
+			make_pair(18,50),make_pair(10,50),make_pair(18,34),make_pair(10,39),make_pair(34,41)
+		
+		),
+
+		Test(
+
+			{{-10,2,-5,7,-1},
+			{3,-9,8,-6,4},
+			{0,11,-12,5,-7},
+			{-14,13,-3,2,15},
+			{6,-8,14,-2,-4}},
+
+			{{-1,2,-5,7,-10},
+			{3,4,-6,8,-9},
+			{0,5,-7,11,-12},
+			{2,-3,13,-14,15},
+			{-2,-4,6,-8,14}},
+
+			make_pair(29,50),make_pair(11,50),make_pair(29,43),make_pair(17,42),make_pair(29,39)
+		)
 
 	};
 
