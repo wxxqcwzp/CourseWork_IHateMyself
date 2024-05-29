@@ -60,7 +60,7 @@ vector<vector<double>> set_user_input_matrix() {
 
 		for (int j = 0; j < columns; j++) {
 
-			cout << "Enter matrix[" << i << "][" << j << "]:";
+			cout << "Enter matrix[" << i+1 << "][" << j+1 << "]:";
 
 			matrix[i][j] = InputDouble("", -DBL_MAX, DBL_MAX);
 		}

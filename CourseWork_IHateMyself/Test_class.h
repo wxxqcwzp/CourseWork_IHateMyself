@@ -12,20 +12,20 @@ public:
 	vector<vector<double>> original_matrix;
 	vector<vector<double>> expected_sorted_matrix;
 
-	pair<double,double> bubble_sort_expected_results;
-	pair<double,double> selection_sort_expected_results;
-	pair<double,double> insertion_sort_expected_results;
-	pair<double,double> shell_sort_expected_results;
-	pair<double,double> quick_sort_expected_results;
+	pair<int, int> bubble_sort_expected_results;
+	pair<int, int> selection_sort_expected_results;
+	pair<int, int> insertion_sort_expected_results;
+	pair<int, int> shell_sort_expected_results;
+	pair<int, int> quick_sort_expected_results;
 
 	Test(vector<vector<double>> original_matrix,
 		vector<vector<double>> expected_sorted_matrix,
 
-		pair<double, double> bubble_sort_expected_results,
-		pair<double, double> selection_sort_expected_results,
-		pair<double, double> insertion_sort_expected_results,
-		pair<double, double> shell_sort_expected_results,
-		pair<double, double> quick_sort_expected_results):
+		pair<int, int> bubble_sort_expected_results,
+		pair<int, int> selection_sort_expected_results,
+		pair<int, int> insertion_sort_expected_results,
+		pair<int, int> shell_sort_expected_results,
+		pair<int, int> quick_sort_expected_results):
 
 		original_matrix(original_matrix),
 		expected_sorted_matrix(expected_sorted_matrix),
